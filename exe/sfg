@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require File.expand_path("#{File.dirname(__FILE__)}/../lib/spec_file_generator")
+
+SpecFileGenerator::Runner.new.run

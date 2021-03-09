@@ -1,0 +1,41 @@
+require:
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4
+  NewCops: enable
+
+Layout/EndOfLine:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'spec_file_generator.gemspec'
+
+Metrics/MethodLength:
+  Max: 12
+
+RSpec/MultipleExpectations:
+  Max: 2
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 6
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
